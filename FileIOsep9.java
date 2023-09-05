@@ -43,6 +43,18 @@ public class FileIOsep9 {
             throw new RuntimeException(e);
         }
 
+        String path = "C:\\Users\\Johnny\\JavaFiles\\arrivingAnimals.txt";
+        String myFileLine = "";
 
-    }
+        try {
+            try {
+                BufferedReader reader = new BufferedReader(new FileReader(path));
+                while ((myFileLine = reader.readLine()) != null);
+
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+
+
+        }
 }
